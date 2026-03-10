@@ -1,0 +1,112 @@
+
+
+
+
+/* Header con imagen */
+header {
+  width: 100%;
+   box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  display: block;
+}
+
+/* Imagen dentro del header */
+.header-img {
+    padding-top: 20px;
+  width: 100%;        /* ocupa todo el ancho */
+  height: auto;       /* mantiene proporción de la imagen */
+  display: block;     /* elimina espacio extra debajo de la imagen */
+}
+
+header div {
+  
+    width: 30%;
+    padding: 40px 50px;
+    float: left;
+    position: relative ; /*top, -bottom, left o el right*/
+    top: 60%; /*HACIA ABAJO*/
+   
+    border-radius: 30px;
+    /*animation-name: cuadro-header;
+    animation-duration: 5s;
+    animation-iteration-count: 1;*/
+   
+
+    
+}
+
+header div h3{
+    font-size: 40px;
+    margin-left: 50px; /*boton mover a la izquierda*/
+    color: rgb(118, 0, 0);
+    font-family: Arial, Helvetica, sans-serif; /*tipo de letra*/
+}
+
+header div p{
+    color: rgb(0, 0, 0);
+    margin: 15px 0; 
+    
+    line-height: 26px;
+    font-size: 17px; /*tamaño de la letra*/
+    margin-left: 50px; /*boton mover a la izquierda*/
+
+}
+
+header div a{
+    background-color: rgb(161, 207, 182);
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+  
+    font-weight: bolder; /*mas negrita la letra*/
+    
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 20px; /*borde*/
+   float: left ;
+   margin-left: 50px; /*boton mover a la izquierda*/
+}
+
+
+/*responsive*/
+/*tablet*/
+@media (max-width:900px){
+
+header div{
+    width:50%;
+    padding:30px;
+}
+
+header div h3{
+    font-size:32px;
+}
+
+}
+
+/*celular*/
+@media (max-width:600px){
+
+header{
+    text-align:center;
+    justify-content:center;
+}
+
+header div{
+    width:90%;
+    margin:0;
+    padding:20px;
+}
+
+header div h3{
+    font-size:26px;
+}
+
+header div p{
+    font-size:15px;
+}
+
+header div a{
+    font-size:14px;
+}
+
+}
+
+

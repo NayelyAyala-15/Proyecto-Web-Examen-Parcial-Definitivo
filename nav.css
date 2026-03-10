@@ -1,0 +1,123 @@
+
+nav {
+    background-color: rgba(99, 95, 24, 0.5);
+
+   position: relative;
+    padding: 15px ; /*tamaño del nav*/
+  width: 100%;
+    top: 0;
+    left: 0;
+   
+    
+    
+}
+
+
+/*nav*/
+
+
+
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+   
+}
+
+
+nav ul li:hover ul{
+    opacity: 1;
+    visibility: visible;
+}
+
+nav ul li{
+    margin: 0 5px;
+}
+
+/*letra*/
+nav ul li a{
+    display: block;
+    padding: 0.5rem 1.2rem; /*tamaño del cuadro*/
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    transition: 330ms all ease-out;
+ 
+    font-weight: bold; /*letra mas gruesa*/
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  
+    font-size: 15px; /*tamaño de la letra*/
+   
+}
+
+
+
+
+nav ul li a:hover{
+    background: rgba(130, 140, 100, 0.5);/*sombra del cuadro*/
+    font-weight: bold;
+    color: #1a1717; /*color de la letra al pasar el mouse*/
+    border-radius: 8px;
+}
+nav ul li ul{
+    background-color: rgba(74, 72, 37, 0.5);
+    display: block;
+    position: absolute;
+    top: 70px; /* esto lo baja a la hora de desglosar */
+    opacity: 0;
+    visibility: hidden;
+    transition: 330ms all ease-out;
+    border-radius: 15px;
+    padding: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+
+/*responsive*/
+/*tablet*/
+@media (max-width:900px){
+
+nav ul{
+    justify-content:space-around;
+}
+
+nav ul li a{
+    font-size:14px;
+}
+
+}
+
+/*celular*/
+@media (max-width:600px){
+
+nav{
+    padding:10px;
+}
+
+/* menu vertical */
+nav ul{
+    flex-direction:column;
+    align-items:center;
+}
+
+nav ul li{
+    width:100%;
+    text-align:center;
+}
+
+nav ul li a{
+    padding:12px;
+    width:100%;
+}
+
+/* submenu */
+nav ul li ul{
+    position:static;
+    opacity:1;
+    visibility:visible;
+    background:none;
+}
+
+}
